@@ -11,6 +11,8 @@ public interface DiscordLinkAPI {
 
     boolean isLinked(UUID uuid);
 
+    String getVoiceChannel(String discordId);
+
     void link(UUID uuid, String discordId);
 
     void unlink(UUID uuid);
