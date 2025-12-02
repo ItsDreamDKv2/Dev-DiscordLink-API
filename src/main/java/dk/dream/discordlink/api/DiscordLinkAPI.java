@@ -9,7 +9,17 @@ public interface DiscordLinkAPI {
 
     UUID getMinecraftUUID(String discordId);
 
+    boolean isLinked(UUID uuid);
+
+    void link(UUID uuid, String discordId);
+
     void unlink(UUID uuid);
+
+    void giveRole(String discordId, String roleId);
+
+    void removeRole(String discordId, String roleId);
+
+    void clearNickname(String discordId);
 
     void setNickname(String discordId, String nickname);
 
